@@ -10,17 +10,8 @@
 
 int main(void)
 {
-char myChar;
-char text[] = "and that piece of art is useful\" - Dora Korpar, 2015 - 10 - 1";
 
-for (int i = 0; i <= (sizeof(text) / sizeof(myChar)) - 2 ; i++)
-{
-putchar(text[i]);
-}
-
-putchar('9');
-putchar('\n');
+write(2, "and that piece of art is useful - Dora Korpar, 2015-10-19\n", 58);
 
 return (1);
 }
-
