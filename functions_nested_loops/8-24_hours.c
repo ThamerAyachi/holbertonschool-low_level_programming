@@ -13,12 +13,17 @@ void jack_bauer(void)
 
 	for (x = 48; x <= 50; x++)
 	{
-		for (y = 48; y <= 51; y++)
+		for (y = 48; y <= 57; y++)
 		{
 			for (i = 48; i <= 53; i++)
 			{
 				for (j = 48; j <= 57; j++)
 				{
+					if (x == 50 && y > 51)
+					{
+						continue;
+					}
+
 					_putchar(x);
 					_putchar(y);
 					_putchar(':');
