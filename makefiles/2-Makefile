@@ -6,7 +6,7 @@ NAME = school
 all: main $(NAME) build
 
 main:
-	gcc -c -o main.o main.c
+	$(CC) -c -o main.o main.c
 
 $(NAME):
 	$(CC) -c -o school$(OBJ) school$(SRC)
