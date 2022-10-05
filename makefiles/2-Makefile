@@ -5,12 +5,12 @@ NAME = school
 
 all: main $(NAME) build
 
-main:
-	$(CC) -c -o main.o main.c
+main: main.c
+	$(CC) -c -o main$(OBJ) main$(SRC)
 
-$(NAME):
+$(NAME): shcool.c
 	$(CC) -c -o school$(OBJ) school$(SRC)
 
-build:
+build: school.o main.o
 	$(CC) main$(OBJ) school$(OBJ) -o school
  
