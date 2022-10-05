@@ -1,10 +1,13 @@
 CC = gcc
-SRC = main.c school.c
+SRC = .c
 OBJ = .o
 NAME = school
 
-%.o: %.c m.h
-	$(CC) -c -o main$(OBJ) school$(OBJ) $(SRC)
+main: main$(SRC)
+	$(CC) -c -o main$(OBJ)
+
+school: school$(SRC)
+	$(CC) -c -o school$(OBJ)
 
 all: main$(OBJ) school$(OBJ)
 	$(CC) main$(OBJ) school$(OBJ) -o $(NAME)
