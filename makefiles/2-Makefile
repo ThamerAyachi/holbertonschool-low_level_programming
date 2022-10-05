@@ -6,8 +6,8 @@ NAME = school
 main: main$(SRC)
 	$(CC) -c -o main$(OBJ)
 
-school: school$(SRC)
+$(NAME): school$(SRC)
 	$(CC) -c -o school$(OBJ)
 
 all: main$(OBJ) school$(OBJ)
-	$(CC) main$(OBJ) school$(OBJ) -o $(NAME)
+	$(CC) main$(OBJ) school$(OBJ) -o school
