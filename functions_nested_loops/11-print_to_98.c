@@ -18,25 +18,7 @@ void print_to_98(int n)
 	{
 		for (i = n; i >= 98; i--)
 		{
-			if (i > 99)
-			{
-				w = (i / 100) + '0';
-				k = ((i / 10) - (i / 100) * 10) + '0';
-				c = (i % 10) + '0';
-				putchar(w);
-				putchar(k);
-				putchar(c);
-			}
-			else if (i > 9)
-			{
-				c = (i % 10) + '0';
-				k = (i / 10) + '0';
-				putchar(k);
-				putchar(c);
-			}
-			else
-				putchar(i + '0');
-
+			printf("%d", i);
 			if (i != 98)
 			{
 				putchar(',');
@@ -48,7 +30,6 @@ void print_to_98(int n)
 	{
 		for (i = n; i <= 98; i++)
 		{
-
 			printf("%d", i);
 			if (i != 98)
 			{
@@ -57,4 +38,5 @@ void print_to_98(int n)
 			}
 		}
 	}
+	putchar('\n');
 }
