@@ -1,8 +1,8 @@
 all : executable
 
 #Create your first Makefile.
-school: main.c school.c
-	gcc main.c school.c -o school
+school: main.c school.c m.h
+	gcc main.c school.c m.h -o school
 
 main.o: main.c
 	gcc -c main.c
