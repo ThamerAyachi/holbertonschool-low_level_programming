@@ -1,5 +1,8 @@
-all : executable
+school:
+	gcc main.c school.c -o school
 
-school: main.c school.c m.h
-	gcc main.c school.c m.h -o school
+main.o: main.c
+	cc -c -g main.c
 
+school.o: scholl.c
+	cc -c -g school.c
