@@ -1,6 +1,5 @@
-.PHONY : all
 all : executable
 
 #Create your first Makefile.
 school : 
-	gcc main.c school.c - o school
+	gcc main.c school.c -o school
