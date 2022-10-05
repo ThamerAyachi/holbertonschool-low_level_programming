@@ -8,7 +8,7 @@ all: main $(NAME) build
 main: main$(SRC)
 	$(CC) -c -o main$(OBJ) main$(SRC)
 
-$(NAME): shcool$(SRC)
+$(NAME): school$(SRC)
 	$(CC) -c -o school$(OBJ) school$(SRC)
 
 build: school$(OBJ) main$(OBJ)
