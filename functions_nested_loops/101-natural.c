@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point
+ *
+ * Description: 'Print numbers'
+ *
+ * Return: integer
+ */
 int main(void)
 {
 	int i;
@@ -12,7 +19,7 @@ int main(void)
 			x = x + i;
 		}
 	}
-	printf("%d", x);
+	printf("%d\n", x);
 
 	return (0);
 }
