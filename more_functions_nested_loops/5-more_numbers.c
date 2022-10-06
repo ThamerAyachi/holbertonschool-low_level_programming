@@ -10,13 +10,20 @@
 void more_numbers(void)
 {
 	int i, j;
-	char c[] = "1234567891011121314";
+	char c, k;
 
 	for (i = 0; i <= 10; i++)
 	{
-		for (j = 0; j <= (sizeof(c) / sizeof(c[0])) - 2; j++)
+		for (j = 0; j <= 14; j++)
 		{
-			_putchar(c[j]);
+			c = j + '0';
+			if (j > 9)
+			{
+				k = (j / 10) + '0';
+				c = (j % 10) + '0';
+				_putchar(k);
+			}
+			_putchar(c);
 		}
 		_putchar('\n');
 	}
