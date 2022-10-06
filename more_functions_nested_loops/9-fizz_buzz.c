@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point
+ *
+ * Description: 'The “Fizz-Buzz test”.'
+ *
+ * Return: integer
+ */
 int main(void)
 {
 	int i;
