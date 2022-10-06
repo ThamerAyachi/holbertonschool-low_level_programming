@@ -26,10 +26,10 @@ void print_times_table(int n)
 					if (j * i < 100)
 					{
 						putchar(' ');
-						if (j * i < 10)
-						{
-							putchar(' ');
-						}
+					}
+					if (j * i < 10 && j * i < 100)
+					{
+						putchar(' ');
 					}
 					putchar(' ');
 				}
