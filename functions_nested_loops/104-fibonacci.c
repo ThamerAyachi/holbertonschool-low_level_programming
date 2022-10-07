@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	double i, z, x, j;
+	float i, z, x, j;
 
 	j = 1;
 	z = 1;
