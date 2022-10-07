@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	int i, j, z, x;
+	double i, z, x, j;
 
 	j = 1;
 	z = 1;
@@ -18,10 +18,14 @@ int main(void)
 	{
 		x = z;
 		z = j;
-		printf("%d", j);
-		putchar(',');
-		putchar('\n');
+		printf("%.0f", j);
 		j = x + z;
+		if (i != 50)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
+	putchar('\n');
 	return (0);
 }
