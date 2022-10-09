@@ -28,3 +28,8 @@ int main(void)
 
 	return (0);
 }
+
+int getPrim(int n)
+{
+	return (0);
+}
