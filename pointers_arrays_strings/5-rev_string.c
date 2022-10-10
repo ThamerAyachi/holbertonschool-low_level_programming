@@ -1,5 +1,14 @@
 #include "main.h"
 
+/**
+ * rev_string - Entry point
+ *
+ * @s : pointer of string
+ *
+ * Description: 'returns the length of a string.'
+ *
+ * Return: void
+ */
 void rev_string(char *s)
 {
 	int i, len, temp;
