@@ -20,10 +20,11 @@ void print_rev(char *s)
 
 	if (i != 1)
 	{
-		do {
+		while (i != -1)
+		{
 			_putchar(s[i]);
 			i -= 1;
-		} while (i != -1);
+		}
 	}
 	_putchar('\n');
 }
