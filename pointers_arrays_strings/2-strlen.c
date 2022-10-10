@@ -12,6 +12,7 @@
 int _strlen(char *s)
 {
 	char *c = s;
+	char h = c;
 
-	return (sizeof(c));
+	return (sizeof(h));
 }
