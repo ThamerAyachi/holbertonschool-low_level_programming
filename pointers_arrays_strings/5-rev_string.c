@@ -16,7 +16,7 @@ void rev_string(char *s)
 	temp = 0;
 	while (s[temp] != '\0')
 	{
-		temp++
+		temp += 1;
 	}
 
 	for (i = 0; i < len / 2; i++)
