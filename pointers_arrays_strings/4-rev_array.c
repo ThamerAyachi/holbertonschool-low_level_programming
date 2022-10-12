@@ -13,12 +13,12 @@ void reverse_array(int *a, int n)
 {
 	int b[n], i;
 
-	for (i = n; i >= 0; i--)
+	for (i = n - 1; i >= 0; i--)
 	{
-		b[n - i] = a[i];
+		b[n - i - 1] = a[i];
 	}
 
-	for (i = 0; i < n; i++)
+	for (i = 0; i <= n; i++)
 	{
 		a[i] = b[i];
 	}
