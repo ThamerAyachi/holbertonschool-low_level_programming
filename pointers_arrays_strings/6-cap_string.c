@@ -33,7 +33,7 @@ char toUpper(char s)
  */
 char *cap_string(char *s)
 {
-	int i, j;
+	int i;
 
 	s[0] = toUpper(s[0]);
 
