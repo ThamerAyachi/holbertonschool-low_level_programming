@@ -20,9 +20,6 @@ char *_strncpy(char *dest, char *src, int n)
 		j++;
 	}
 
-	if (j == 0)
-		return (dest);
-
 	for (i = 0; i < n; i++)
 	{
 		if (i <= j)
