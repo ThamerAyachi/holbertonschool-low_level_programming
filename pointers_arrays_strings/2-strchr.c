@@ -12,22 +12,25 @@
  */
 char *_strchr(char *s, char c)
 {
-	unsigned int i, j = 0, t = 0;
+	unsigned int i, j, t = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (t == 0 && s[i] == c)
+		if (t == 0, s[i] != c)
+		{
+			for (j = 0; s[j] != '\0'; j++)
+			{
+				s[j] = s[j + 1];
+			}
+		}
+		else
 		{
 			t = 1;
-			s[i] = NULL;
 		}
-
-		else if (t == 1)
-			j++;
 	}
 
-	if (j == 0)
+	if (t == 0)
 		return (NULL);
 
-	return (f);
+	return (s);
 }
