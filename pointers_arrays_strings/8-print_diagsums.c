@@ -6,7 +6,7 @@
  * @a : integer[][]
  * @size : integer
  *
- * Description: 'prints the sum of the two diagonals of a square matrix of integers.'
+ * Description: 'prints the sum of the two diagonals.'
  *
  * Return: void
  */
