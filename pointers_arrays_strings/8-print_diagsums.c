@@ -12,19 +12,20 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, j, c = 0;
+	int i, p, r = 0;
+
+	for (i = 0; s < size; i++)
+	{
+		p = (i * size) + i;
+		r += *(a + p);
+	}
+	printf("%d, ", r);
+	r = 0;
 
 	for (i = 0; i < size; i++)
 	{
-		c += a[i][i];
+		p = (i * size) + (size - 1 - i);
+		r += *(a + p);
 	}
-
-	printf("%d", c);
-	c = 0;
-
-	for (; i >= 0; i--)
-	{
-		c += a[i][i];
-	}
-	printf("%d", c);
+	printf("%d\n", r);
 }
