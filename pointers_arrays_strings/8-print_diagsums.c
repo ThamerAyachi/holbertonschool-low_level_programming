@@ -14,7 +14,7 @@ void print_diagsums(int *a, int size)
 {
 	int i, p, r = 0;
 
-	for (i = 0; s < size; i++)
+	for (i = 0; i < size; i++)
 	{
 		p = (i * size) + i;
 		r += *(a + p);
