@@ -17,7 +17,8 @@ void print_number(int n)
 		_putchar('-');
 	}
 
-	int c = 1, m = 1;
+	int c = 1;
+	int m = 1;
 
 	while (c)
 	{
