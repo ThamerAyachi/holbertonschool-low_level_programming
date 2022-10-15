@@ -11,14 +11,13 @@
  */
 void print_number(int n)
 {
+	int c = 1, m = 1;
+
 	if (n < 0)
 	{
 		n = n * (-1);
 		_putchar('-');
 	}
-
-	int c = 1;
-	int m = 1;
 
 	while (c)
 	{
