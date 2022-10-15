@@ -19,9 +19,9 @@ char *rot13(char *s)
 
 		for (j = 0; j < 2; j++)
 		{
-			if (s[i] >= b[i] && s[i] <= f[i])
+			if (s[i] >= b[j] && s[i] <= f[j])
 			{
-				s[i] = (s[i] - b[i] + 13) % 26 + b[i];
+				s[i] = (s[i] - b[j] + 13) % 26 + b[j];
 			}
 		}
 	}
