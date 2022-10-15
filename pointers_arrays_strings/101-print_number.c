@@ -12,31 +12,32 @@
 void print_number(int n)
 {
 	int c = 1, m = 1;
+	int num = n;
 
-	if (n < 0)
+	if (num < 0)
 	{
-		n = n * (-1);
+		num = num * (-1);
 		_putchar('-');
 	}
 
 	while (c)
 	{
-		if (n / (m * 10) > 0)
+		if (num / (m * 10) > 0)
 			m = m * 10;
 		else
 			c = 0;
 	}
 
-	while (n >= 0)
+	while (num >= 0)
 	{
 		if (m == 1)
 		{
-			_putchar(n % 10 + '0');
-			n = -1;
+			_putchar(num % 10 + '0');
+			num = -1;
 		}
 		else
 		{
-			_putchar((n / m % 10) + '0');
+			_putchar((num / m % 10) + '0');
 			m /= 10;
 		}
 	}
