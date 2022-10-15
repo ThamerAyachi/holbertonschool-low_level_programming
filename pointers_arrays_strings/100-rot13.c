@@ -21,8 +21,7 @@ char *rot13(char *s)
 		{
 			if (a >= b[i] && a <= f[i])
 			{
-				a = a + 13;
-				s[i] = a;
+				s[i] = (s[i] - b[i] + 13) % 26 + b[i];
 			}
 		}
 	}
