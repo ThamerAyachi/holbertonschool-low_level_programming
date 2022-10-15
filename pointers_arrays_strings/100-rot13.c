@@ -11,15 +11,15 @@
  */
 char *rot13(char *s)
 {
-	int i, j, b[] = {65, 97}, f[] = {90, 122};
+	int i, j;
+	char b[] = {'a', 'A'}, f[] = {'z', 'Z'};
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		int a = s[i];
 
 		for (j = 0; j < 2; j++)
 		{
-			if (a >= b[i] && a <= f[i])
+			if (s[i] >= b[i] && s[i] <= f[i])
 			{
 				s[i] = (s[i] - b[i] + 13) % 26 + b[i];
 			}
