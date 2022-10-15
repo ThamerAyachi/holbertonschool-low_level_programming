@@ -29,3 +29,4 @@ char *_strstr(char *haystack, char *needle);
 void print_chessboard(char (*a)[8]);
 void print_diagsums(int *a, int size);
 char *rot13(char *s);
+void print_number(int n);
