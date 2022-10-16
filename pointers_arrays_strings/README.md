@@ -41,3 +41,5 @@
 | 5-strstr.c           | Write a function that locates a substring.                                                |
 | 7-print_chessboard.c | Write a function that prints the chessboard.                                              |
 | 8-print_diagsums.c   | Write a function that prints the sum of the two diagonals of a square matrix of integers. |
+
+Give us star
