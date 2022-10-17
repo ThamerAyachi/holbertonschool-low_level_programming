@@ -14,6 +14,8 @@ int sqrt_check(int x, int y)
 {
 	if (x * x == y)
 		return (x);
+	if (x * x > y)
+		return (-1);
 
 	return (sqrt_check(x + 1, y));
 }
