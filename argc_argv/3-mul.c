@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * main - Entry point
@@ -22,7 +23,7 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		r = r * argv[i];
+		r = r * atoi(argv[i]);
 	}
 
 	printf("%d\n", r);
