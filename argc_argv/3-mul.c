@@ -13,7 +13,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, r = 0;
+	int x, i, r = 0;
 
 	if (argc != 3)
 	{
@@ -23,7 +23,8 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		r = r * atoi(argv[i]);
+		x = strtol(argv[i], NULL, 10);
+		r = r * x;
 	}
 
 	printf("%d\n", r);
