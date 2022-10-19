@@ -3,6 +3,9 @@
 /**
  * main - Entry point
  *
+ * @argc : integer
+ * @argv : array of strings
+ *
  * Description: 'that prints its name, followed by a new line.'
  *
  * Return: Always 0 (Success)
