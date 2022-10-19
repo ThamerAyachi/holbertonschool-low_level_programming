@@ -9,7 +9,7 @@
  *
  * Description: 'prints the number of arguments passed into it.'
  *
- * Return: Always 1 (Success)
+ * Return:  1 (Success) or 0
  */
 int main(int argc, char *argv[])
 {
@@ -29,5 +29,5 @@ int main(int argc, char *argv[])
 
 	printf("%d\n", r);
 
-	return (1);
+	return (0);
 }
