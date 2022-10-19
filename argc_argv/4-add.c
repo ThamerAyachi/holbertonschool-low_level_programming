@@ -13,7 +13,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int x, i, r = 0;
+	int i, r = 0;
 
 	if (argc < 1)
 	{
@@ -28,8 +28,7 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
-		x = strtol(argv[i], NULL, 10);
-		r = r + x;
+		r += atoi(argv[i]);
 	}
 
 	printf("%d\n", r);
