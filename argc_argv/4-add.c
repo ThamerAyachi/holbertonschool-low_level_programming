@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - Entry point
@@ -23,7 +24,7 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		if (argv[i] < 'a' || argv[i] > 'z')
+		if (!isdigit(argv[i]))
 		{
 			printf("Error\n");
 			return (1);
