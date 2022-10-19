@@ -28,16 +28,14 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	r += n / 100;
-	n %= 100;
-	r += n / 50;
-	n %= 50;
-	r += n / 20;
-	n %= 20;
+	r += n / 25;
+	n %= 25;
 	r += n / 10;
 	n %= 10;
 	r += n / 5;
 	n %= 5;
+	r += n / 2;
+	n %= 2;
 
 	printf("%d\n", r + n);
 
