@@ -12,3 +12,4 @@
 | [pointers_arrays_strings](./pointers_arrays_strings/)         | C - Pointers, arrays and strings      |
 | [recursion](./recursion/)                                     | C - Recursion                         |
 | [static_libraries](./static_libraries/)                       | C - Static Libraries                  |
+| [argc_argv](./argc_argv/)                                     | C - argc, argv                        |
