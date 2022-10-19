@@ -13,7 +13,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, r = 0;
+	int i, j, r = 0;
 
 	if (argc < 1)
 	{
@@ -23,10 +23,14 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		if (!atoi(argv[i]))
+
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			printf("Error\n");
-			return (1);
+			if (argv[i][j] < 'z' || argv[i][j] > 'a')
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
 		r += atoi(argv[i]);
 	}
