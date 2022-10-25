@@ -14,3 +14,4 @@
 | [static_libraries](./static_libraries/)                       | C - Static Libraries                  |
 | [argc_argv](./argc_argv/)                                     | C - argc, argv                        |
 | [malloc_free](./malloc_free/)                                 | C - malloc, free                      |
+| [more_malloc_free](./more_malloc_free/)                       | C - More malloc, free                 |
