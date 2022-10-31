@@ -1,6 +1,8 @@
 #ifndef _MAIN_H
 #define _MAIN_H
 
+#include <stddef.h>
+
 /**
  * struct dog - dog struct
  *
