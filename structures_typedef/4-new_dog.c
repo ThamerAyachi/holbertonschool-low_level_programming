@@ -26,7 +26,10 @@ char *strCheck(char *str)
 		return (NULL);
 
 	while (str[j] != '\0')
-		p[j] = str[j++];
+	{
+		p[j] = str[j];
+		j++;
+	}
 
 	p[j] = '\0';
 
