@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 	}
 
 	myFunc = get_op_func(&op);
-	if (myFunc == NULL || (argv[2][0] == '\0' && argv[2][1] != '\0'))
+	if (myFunc == NULL || (argv[2][0] == '\0' || argv[2][1] != '\0'))
 	{
 		printf("Error\n");
 		exit(99);
