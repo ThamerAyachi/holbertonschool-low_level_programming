@@ -11,9 +11,9 @@
  *
  * Return: void
  */
-void array_iterator(int *array, int size, void (*action)(int))
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int i;
+	size_t i;
 
 	if (array != NULL && action != NULL)
 	{
