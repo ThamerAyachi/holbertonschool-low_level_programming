@@ -18,3 +18,4 @@
 | [preprocessor](./preprocessor/)                               | C - Preprocessor                      |
 | [structures_typedef](./structures_typedef/)                   | C - Structures, typedef               |
 | [function_pointers](./function_pointers/)                     | C - Function pointers                 |
+| [variadic_functions](./variadic_functions/)                   | C - Variadic functions                |
