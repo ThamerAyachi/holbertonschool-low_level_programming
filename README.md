@@ -19,3 +19,4 @@
 | [structures_typedef](./structures_typedef/)                   | C - Structures, typedef               |
 | [function_pointers](./function_pointers/)                     | C - Function pointers                 |
 | [variadic_functions](./variadic_functions/)                   | C - Variadic functions                |
+| [singly_linked_lists](./singly_linked_lists/)                 | C - Singly linked lists               |
