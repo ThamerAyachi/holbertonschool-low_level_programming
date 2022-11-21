@@ -1,7 +1,12 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
+#include <stdlib.h>
 
+/**
+ * read_textfile - read text from file
+ * @filename: constant string
+ * @letters: size_t
+ * Return: ssize_t
+ */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t o, r, w;
