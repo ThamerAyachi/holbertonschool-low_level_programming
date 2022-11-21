@@ -8,13 +8,12 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int file, i = 0, wr;
+	int file, wr, i = 0;
 
 	if (filename == NULL)
 		return (-1);
 
 	file = open(filename, O_RDWR | O_APPEND);
-
 	if (file == -1)
 		return (-1);
 
@@ -27,7 +26,9 @@ int append_text_to_file(const char *filename, char *text_content)
 		return (1);
 	}
 	else
+	{
 		wr = write(file, text_content, i);
+	}
 
 	if (wr == -1)
 		return (-1);
