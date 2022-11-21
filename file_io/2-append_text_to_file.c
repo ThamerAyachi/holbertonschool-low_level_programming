@@ -29,7 +29,9 @@ int append_text_to_file(const char *filename, char *text_content)
 	else
 		wr = write(file, text_content, i);
 
-	close(file);
+	if (wr == -1)
+		return (-1);
 
-	return (wr == -1 ? -1 : 1);
+	close(file);
+	return (1);
 }
