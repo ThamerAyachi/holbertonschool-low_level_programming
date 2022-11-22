@@ -50,7 +50,7 @@ int main(int ac, char **av)
 	if (o == -1 || r == -1)
 	{
 		free(str);
-		dprintf(1, "Error: Can't read from file %s\n", av[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
 		exit(98);
 	}
 
