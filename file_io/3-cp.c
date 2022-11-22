@@ -7,6 +7,23 @@
 #include <unistd.h>
 
 /**
+ * _close - close file
+ * @file: integer
+ */
+void _close(int file)
+{
+	int close_err;
+
+	close_err = close(file);
+
+	if (close_err == -1)
+	{
+		dprintf(2, "Error: Can't close fd %d\n", file);
+		exit(100);
+	}
+}
+
+/**
  * main - copy file
  * @ac: integer
  * @av: list of string
@@ -46,11 +63,7 @@ int main(int ac, char **av)
 		dprintf(2, "Error: Can't write to %s\n", av[2]);
 		exit(99);
 	}
-	if (close(file) == 1)
-	{
-		dprintf(2, "Error: Can't close fd %d\n", len);
-		exit(100);
-	}
+	_close(file);
 
 	return (0);
 }
