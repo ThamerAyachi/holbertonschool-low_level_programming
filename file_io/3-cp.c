@@ -23,12 +23,12 @@ int main(int ac, char **av)
 		exit(97);
 	}
 
-	str = malloc(sizeof(char) * 1024);
+	str = malloc(sizeof(char) * 1024 * 8);
 	if (str == NULL)
 		return (-1);
 
 	o = open(av[1], O_RDONLY);
-	r = read(o, str, 1024);
+	r = read(o, str, 1024 * 8);
 
 	if (o == -1 || r == -1)
 	{
