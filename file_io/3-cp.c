@@ -31,42 +31,39 @@ void _close(int file)
  */
 int main(int ac, char **av)
 {
-	char str[1024];
-	int fileF, fileT, w, fileFr;
+	char *str;
+	int o, r, file, w, len = 0;
 
 	if (ac != 3)
 	{
 		dprintf(2, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	fileF = open(av[1], O_RDONLY);
-	if (fileF == -1)
+
+	str = malloc(sizeof(char) * 1024 * 8);
+	if (str == NULL)
+		return (-1);
+
+	o = open(av[1], O_RDONLY);
+	r = read(o, str, 1024 * 8);
+
+	if (o == -1 || r == -1)
 	{
+		free(str);
 		dprintf(1, "Error: Can't read from file %s\n", av[1]);
 		exit(98);
 	}
-	fileT = open(av[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
-	if (fileT == -1)
+
+	file = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
+	while (str[len] != '\0')
+		len++;
+	w = write(file, str, len);
+	if (file == -1 || w == -1)
 	{
 		dprintf(2, "Error: Can't write to %s\n", av[2]);
 		exit(99);
 	}
-	while (fileFr >= 1024)
-	{
-		fileFr = read(fileF, str, 1024);
-		if (fileFr == -1)
-		{
-			dprintf(2, "Error: Can't read from file %s\n", av[1]);
-			exit(98);
-		}
-		w = write(fileT, str, fileFr);
-		if (w == -1)
-		{
-			dprintf(2, "Error: Can't write to %s\n", av[2]);
-			exit(99);
-		}
-	}
-	_close(fileF);
-	_close(fileT);
+	_close(file);
+
 	return (0);
 }
