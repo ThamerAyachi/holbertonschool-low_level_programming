@@ -4,3 +4,4 @@ makefile
 cp
 text
 _text
+test.c
