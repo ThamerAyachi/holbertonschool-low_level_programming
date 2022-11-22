@@ -52,5 +52,5 @@ int main(int ac, char **av)
 		exit(100);
 	}
 
-	return (1);
+	return (0);
 }
