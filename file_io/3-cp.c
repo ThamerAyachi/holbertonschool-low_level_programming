@@ -51,7 +51,6 @@ int main(int ac, char **av)
 	{
 		free(str);
 		dprintf(1, "Error: Can't read from file %s\n", av[1]);
-		_close(o);
 		exit(98);
 	}
 
