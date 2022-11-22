@@ -40,7 +40,7 @@ int main(int ac, char **av)
 	file = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	while (str[len] != '\0')
 		len++;
-	w = write(file, str, len);
+	w = write(file, str, 1024 * 8);
 	if (file == -1 || w == -1)
 	{
 		dprintf(2, "Error: Can't write to %s\n", av[2]);
