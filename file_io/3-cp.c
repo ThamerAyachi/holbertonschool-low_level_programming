@@ -37,7 +37,7 @@ int main(int ac, char **av)
 		exit(98);
 	}
 
-	file = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
+	file = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	while (str[len] != '\0')
 		len++;
 	w = write(file, str, len);
