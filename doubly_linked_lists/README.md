@@ -2,7 +2,8 @@
 
 ## Files
 
-| File name  | Description   |
-| ---------- | ------------- |
-| .gitignore | Ignored Files |
-| lists.h    | Header file   |
+| File name          | Description                                                           |
+| ------------------ | --------------------------------------------------------------------- |
+| .gitignore         | Ignored Files                                                         |
+| lists.h            | Header file                                                           |
+| 0-print_dlistint.c | Write a function that prints all the elements of a `dlistint_t` list. |
