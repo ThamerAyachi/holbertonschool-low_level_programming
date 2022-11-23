@@ -23,3 +23,4 @@
 | [more_singly_linked_lists](./more_singly_linked_lists/)       | C - More singly linked lists          |
 | [bit_manipulation](./bit_manipulation/)                       | C - Bit manipulation                  |
 | [file_io](./file_io/)                                         | C - File I/O                          |
+| [doubly_linked_lists](./doubly_linked_lists/)                 | C - Doubly linked lists               |
