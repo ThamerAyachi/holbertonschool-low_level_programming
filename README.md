@@ -24,3 +24,4 @@
 | [bit_manipulation](./bit_manipulation/)                       | C - Bit manipulation                  |
 | [file_io](./file_io/)                                         | C - File I/O                          |
 | [doubly_linked_lists](./doubly_linked_lists/)                 | C - Doubly linked lists               |
+| [hash_tables](./hash_tables/)                                 | C - Hash tables                       |
