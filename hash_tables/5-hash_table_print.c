@@ -7,12 +7,12 @@
  */
 void print_ele(hash_node_t *hn, unsigned long int j)
 {
-	if (hn->next)
-		print_ele(hn->next, j++);
 	if (j != 0)
 		printf(", ");
 	printf("'%s':", hn->key);
 	printf(" '%s'", hn->value);
+	if (hn->next)
+		print_ele(hn->next, j++);
 }
 
 /**
