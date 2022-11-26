@@ -11,3 +11,4 @@
 | 2-key_index.c         | Write a function that gives you the index of a key.            |
 | 3-hash_table_set.c    | Write a function that adds an element to the hash table.       |
 | 4-hash_table_get.c    | Write a function that retrieves a value associated with a key. |
+| 5-hash_table_print.c  | Write a function that prints a hash table.                     |
