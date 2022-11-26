@@ -1,5 +1,15 @@
 #include "hash_tables.h"
 
+void print_ele(hash_node_t *hn, unsigned long int j)
+{
+	if (hn->next)
+		print_ele(hn->next, j++);
+	if (j != 0)
+		printf(", ");
+	printf("'%s':", hn->key);
+	printf(" '%s'", hn->value);
+}
+
 /**
  * hash_table_print - print hash table
  * @ht: hash_table_t
@@ -15,13 +25,7 @@ void hash_table_print(const hash_table_t *ht)
 		for (i = 0; i < ht->size; i++)
 		{
 			if (ht->array[i])
-			{
-				if (j != 0)
-					printf(", ");
-				printf("'%s':", ht->array[i]->key);
-				printf(" '%s'", ht->array[i]->value);
-				j++;
-			}
+				print_ele(ht->array[i], j++);
 		}
 
 		putchar('}');
