@@ -1,5 +1,10 @@
 #include "hash_tables.h"
 
+/**
+ * print_ele - print one element
+ * @hn: hash_node_t
+ * @j: integer
+ */
 void print_ele(hash_node_t *hn, unsigned long int j)
 {
 	if (hn->next)
