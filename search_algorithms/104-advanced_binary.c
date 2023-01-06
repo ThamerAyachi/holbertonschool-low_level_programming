@@ -10,7 +10,7 @@ void print_array(int *array, int start, int final)
 {
 	int i;
 
-	if (start < final)
+	if (start <= final)
 		printf("Searching in array: ");
 
 	for (i = start; i <= final; i++)
@@ -19,7 +19,7 @@ void print_array(int *array, int start, int final)
 			printf(", ");
 		printf("%d", array[i]);
 	}
-	if (start < final)
+	if (start <= final)
 		putchar('\n');
 }
 
