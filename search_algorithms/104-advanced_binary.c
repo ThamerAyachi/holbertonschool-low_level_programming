@@ -35,15 +35,15 @@ int second_function(int *array, int value, int low, int high)
 
 	print_array(array, low, high);
 
-	if (low >= high)
+	if (low > high)
 		return (-1);
 
-	if (array[mid] == value)
+	if (array[mid] == value && (high - low) < 3)
 		return (mid);
 	else if (array[mid] < value)
 		return second_function(array, value, mid + 1, high);
 	else
-		return second_function(array, value, low, mid - 1);
+		return second_function(array, value, low, mid);
 }
 
 /**
@@ -55,5 +55,8 @@ int second_function(int *array, int value, int low, int high)
  */
 int advanced_binary(int *array, size_t size, int value)
 {
+	if (array == NULL || size == 0)
+		return (-1);
+
 	return second_function(array, value, 0, size - 1);
 }
