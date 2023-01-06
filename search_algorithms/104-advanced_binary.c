@@ -10,7 +10,8 @@ void print_array(int *array, int start, int final)
 {
 	int i;
 
-	printf("Searching in array: ");
+	if (start < final)
+		printf("Searching in array: ");
 
 	for (i = start; i <= final; i++)
 	{
@@ -18,7 +19,8 @@ void print_array(int *array, int start, int final)
 			printf(", ");
 		printf("%d", array[i]);
 	}
-	putchar('\n');
+	if (start < final)
+		putchar('\n');
 }
 
 /**
@@ -41,9 +43,9 @@ int second_function(int *array, int value, int low, int high)
 	if (array[mid] == value && (high - low) < 3)
 		return (mid);
 	else if (array[mid] < value)
-		return second_function(array, value, mid + 1, high);
+		return (second_function(array, value, mid + 1, high));
 	else
-		return second_function(array, value, low, mid);
+		return (second_function(array, value, low, mid));
 }
 
 /**
@@ -58,5 +60,5 @@ int advanced_binary(int *array, size_t size, int value)
 	if (array == NULL || size == 0)
 		return (-1);
 
-	return second_function(array, value, 0, size - 1);
+	return (second_function(array, value, 0, size - 1));
 }
